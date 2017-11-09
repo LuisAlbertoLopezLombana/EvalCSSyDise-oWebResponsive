@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Luis Alberto López Lombana">
+<meta name="description"
+	content="Fotografías de alta calidad">
+<title>Web de Fotografía</title>
+<!-- Scripts -->
+<script src="js/mostrarSecciones.js"></script>
+<!-- Estilos -->
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<header>
+		<h1>Comenzando con la fotografía</h1>
+			<nav>
+				<ul>
+					<li><a href="#" id="inicioLink"  class="link" onclick="mostrarSeccion(event, 'inicio', 'inicioLink')" >Inicio</a></li>
+					<li><a href="#" id="paisajesLink" class="link" onclick="mostrarSeccion(event, 'paisajes', 'paisajesLink')">Paisajes</a></li>
+					<li><a href="#" id="retratosLink" class="link" onclick="mostrarSeccion(event, 'retratos', 'retratosLink')">Retratos</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<section id="inicio" class="secc">
+		<iframe src="secure/inicio.html" width="100%" height="600"
+			frameborder="0"></iframe>
+	</section>
+
+	<section id="paisajes" class="secc dis">
+		<iframe src="secure/paisajes.html" width="100%" height="600"
+			frameborder="0"></iframe>
+	</section>
+
+	<section id="retratos" class="secc dis">
+		<iframe src="secure/retratos.html" width="100%" height="600"
+			frameborder="0"></iframe>
+	</section>
+
+	<footer>
+		<section>
+			<ul>
+				<li><strong>Email:</strong> luisalbertolopezlombana@gmail.com</li>
+				<li><strong>Teléfono:</strong> 3167423464</li>
+				<li><strong>Dirección:</strong> Calle 70 # 17 - 52. Bogotá.
+					Colombia.</li>
+			</ul>
+		</section>
+	</footer>
+</body>
+</html>
