@@ -30,7 +30,7 @@ header{
 h1{
   color: white;
   text-shadow: 2px 2px #02010a;
-  display: inline;
+  text-align: center;
 }
 
 ul {
@@ -56,8 +56,10 @@ li a {
 }
 
 nav{
-  float:right;
   display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
 }
 
 .dis{
@@ -106,13 +108,19 @@ box-shadow: 2px 2px 0px 0px #02010a;
 }
 
 img[id*= "imagenSecundaria"] {
-  margin-bottom: 10px;
+  margin: 10px;
   height:200px;
   width: 200px;
   flex: 1 2 40%;
 }
 
 @media (max-width:420px) {
+
+  nav{
+    display: block;
+    margin:auto;
+  }
+
   #imagenCentral{
     display:block;
     margin:auto;
@@ -129,8 +137,8 @@ img[id*= "imagenSecundaria"] {
   }
 
   img[id*= "imagenSecundaria"] {
+    margin-bottom: 5%;
     height:100%;
-    width: 100%;
     flex: 1 2 100%;
   }
 }
