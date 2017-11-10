@@ -1,6 +1,30 @@
+@font-face{
+  font-family: 'Dancing Script';
+  src:url('../resource/fonts/DancingScript-Regular.ttf');
+}
+
+*{
+  font-family: 'Dancing Script', cursive;
+}
+
+/*
+Html
+*/
+
+html{
+  background-color: #02010a;
+}
+
+/*
+Header
+*/
+
 header{
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 h1{
@@ -38,4 +62,100 @@ nav{
 
 .dis{
   display: none;
+}
+
+.secc{
+  margin: 0px;
+}
+
+/*
+Body
+*/
+body{
+  margin: 0px;
+}
+
+#bodyIndex{
+  width: 900px;
+  display:block;
+  margin:auto;
+}
+
+
+iframe{
+  width:900px;
+  height:1200px;
+}
+
+/*
+Imagenes
+*/
+
+img{
+
+-webkit-box-shadow: 2px 2px 0px 0px #02010a;
+-moz-box-shadow: 2px 2px 0px 0px #02010a;
+box-shadow: 2px 2px 0px 0px #02010a;
+
+}
+
+#imagenCentral{
+  display:block;
+  margin:auto;
+  width: 50%;
+}
+
+img[id*= "imagenSecundaria"] {
+  margin-bottom: 10px;
+  height:200px;
+  width: 200px;
+  flex: 1 2 40%;
+}
+
+@media (max-width:420px) {
+  #imagenCentral{
+    display:block;
+    margin:auto;
+    width: 100%;
+  }
+
+  iframe{
+    width:100%;
+    height:1200px;
+    frameborder:0;
+  }
+  #bodyIndex{
+    width: 100%;
+  }
+
+  img[id*= "imagenSecundaria"] {
+    height:100%;
+    width: 100%;
+    flex: 1 2 100%;
+  }
+}
+
+#imagenSecundariaIzq{
+  order: 1;
+}
+
+#imagenSecundariaDer{
+  order: 2;
+}
+
+/*
+Secciones
+*/
+
+#seccImgCentral{
+  background-color: #82c3a6;
+  padding: 10px;
+}
+
+#seccImgSecundaria{
+  padding: 20px;
+  background-color:  #d5c75f;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
 }

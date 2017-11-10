@@ -5,6 +5,7 @@
 <meta name="author" content="Luis Alberto López Lombana">
 <meta name="description"
 	content="Fotografías de alta calidad">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
 <title>Web de Fotografía</title>
 <!-- Scripts -->
 <script src="js/mostrarSecciones.js"></script>
@@ -12,9 +13,9 @@
 <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body id="bodyIndex">
 	<header>
-		<h1>Comenzando con la fotografía</h1>
+			<h1>Comenzando con la fotografía</h1>
 			<nav>
 				<ul>
 					<li><a href="#" id="inicioLink"  class="link" onclick="mostrarSeccion(event, 'inicio', 'inicioLink')" >Inicio</a></li>
@@ -25,17 +26,17 @@
 	</header>
 
 	<section id="inicio" class="secc">
-		<iframe src="secure/inicio.html" width="100%" height="600"
+		<iframe src="secure/inicio.html"
 			frameborder="0"></iframe>
 	</section>
 
 	<section id="paisajes" class="secc dis">
-		<iframe src="secure/paisajes.html" width="100%" height="600"
+		<iframe src="secure/paisajes.html"
 			frameborder="0"></iframe>
 	</section>
 
 	<section id="retratos" class="secc dis">
-		<iframe src="secure/retratos.html" width="100%" height="600"
+		<iframe src="secure/retratos.html"
 			frameborder="0"></iframe>
 	</section>
 
