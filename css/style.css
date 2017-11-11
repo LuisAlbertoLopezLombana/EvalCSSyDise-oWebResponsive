@@ -246,7 +246,7 @@ Media para dispositivos móviles
   #seccImgCentral{
     padding: 10px;
   }
-  
+
   #seccImg{
     padding: 10px;
   }
@@ -291,6 +291,13 @@ Media para dispositivos móviles
 
   div[class*= "Footer"] {
     flex: 1 1 100% !important;
+  }
+  .imagenInd{
+    width: 80%;
+  }
+
+  figcaption{
+      margin-bottom: 10%;
   }
 
 }
