@@ -77,25 +77,26 @@ body{
   width: 900px;
   display:block;
   margin:auto;
-  animation: ocultarScroll 1.5s;
+  animation: ocultarScroll 4s;
+
 }
 
-/*Animaciones para body y sección de contenido.*/
+/*Animaciones body y sección de contenido.*/
 @-webkit-keyframes ocultarScroll {
-  0% {
-    overflow:hidden;
+  from{
+      overflow:hidden;
   }
-  100%{
-    overflow:auto;
+  to{
+      overflow:auto;
   }
 }
 
 @-webkit-keyframes deslizarVerticalmente {
   0% {
-    transform: translateY(100%);
+    transform: translateY(150%);
   }
-  70% {
-    transform: translateY(-7%);
+  60% {
+    transform: translateY(-5%);
   }
   100%{
     transform: translateY(0%);
@@ -131,10 +132,10 @@ figure[class*= "imagenCentral"] {
 Imagenes Secundarias
 */
 
-#seccImgSecundaria{
+#seccImg{
   padding: 10px 30px 10px 30px;
   background-color:  #d5c75f;
-  border: 1px solid red;
+  border: 1px solid #d5c75f;
   display: flex;
   flex-flow: row wrap;
 }
@@ -188,6 +189,28 @@ figcaption{
 }
 
 
+
+#imagenPaisajeRetrato {
+  text-align: center;
+  margin: 10px ;
+  flex: 1 2 30%;
+}
+
+/*Filtros*/
+
+#imagenPaisajeRetrato:nth-child(1){
+  filter: blur(10px);
+}
+
+#imagenPaisajeRetrato:nth-child(3){
+  filter: sepia(90%);
+}
+
+#imagenPaisajeRetrato:nth-child(2n+0){
+  filter: grayscale(100%);
+}
+
+
 /*
 Pie de página
 */
@@ -223,7 +246,8 @@ Media para dispositivos móviles
   #seccImgCentral{
     padding: 10px;
   }
-  #seccImgSecundaria{
+  
+  #seccImg{
     padding: 10px;
   }
 
@@ -234,9 +258,16 @@ Media para dispositivos móviles
   #imagenSecundariaDer{
     margin-left: 0%;
   }
-h1{
-    width: 100%;
-}
+
+  #imagenPaisajeRetrato {
+    text-align: center;
+    margin: 10px ;
+    flex: 1 2 100%;
+  }
+
+  h1{
+      width: 100%;
+  }
 
   nav{
     display: block;
