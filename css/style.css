@@ -43,9 +43,6 @@ li{
   float:left;
 }
 
-ul li:first-child a {
-     display: block;
-   }
 
 li a {
     display: block;
@@ -54,6 +51,12 @@ li a {
     padding: 10px 10px;
 
 }
+
+a.nounderline:link
+{
+ text-decoration:none;
+}
+
 
 nav{
   display: block;
@@ -74,19 +77,35 @@ nav{
 Body
 */
 body{
-  margin: 0px;
-}
-
-#bodyIndex{
   width: 900px;
   display:block;
   margin:auto;
+  animation: ocultarScroll 1.5s;
+}
+@-webkit-keyframes ocultarScroll {
+  0% {
+    overflow:hidden;
+  }
+  100%{
+    overflow:auto;
+  }
 }
 
+@-webkit-keyframes deslizarVerticalmente {
+  0% {
+    transform: translateY(100%);
+  }
+  70% {
+    transform: translateY(-7%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
 
-iframe{
-  width:900px;
-  height:1200px;
+}
+
+#seccPrincipal{
+  animation: deslizarVerticalmente 1s;
 }
 
 /*
@@ -127,13 +146,8 @@ img[id*= "imagenSecundaria"] {
     width: 100%;
   }
 
-  iframe{
-    width:100%;
-    height:1200px;
-    frameborder:0;
-  }
-  #bodyIndex{
-    width: 100%;
+  body{
+    width: 95%;
   }
 
   img[id*= "imagenSecundaria"] {
@@ -141,6 +155,11 @@ img[id*= "imagenSecundaria"] {
     height:100%;
     flex: 1 2 100%;
   }
+
+  div[class*= "Footer"] {
+    flex: 1 1 100% !important;
+  }
+
 }
 
 #imagenSecundariaIzq{
@@ -166,4 +185,27 @@ Secciones
   border: 1px solid red;
   display: flex;
   flex-flow: row wrap;
+}
+
+/*
+Pie de página
+*/
+
+footer{
+  height: 100%;
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
+}
+
+#footerSecc{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+div[class*= "Footer"] {
+  padding: 0px 20px 0px 20px;
+  height:100%;
+  width: 100%;
+  flex: 1 1 10%;
 }
